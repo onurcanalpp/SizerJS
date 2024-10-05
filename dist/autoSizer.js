@@ -37,7 +37,6 @@ function controlElementGroupStructure(group) {
                 layerOfElementChildren.forEach((childElement) => {
                     childElement.style.minHeight = 'auto';
                 });
-                innerElement.style.minHeight = 'auto';
             });
             let rowHeights = innerGroup.map((element) => element.offsetHeight);
             let biggerRowHeight = getBiggerHeight(rowHeights);
