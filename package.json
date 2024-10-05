@@ -1,0 +1,21 @@
+{
+  "name": "sizerjs",
+  "version": "1.0.7",
+  "description": "A library for auto-sizing elements in your web projects.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Onurcan Alp",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onurcanalpp/sizerjs.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2"
+  }
+}
