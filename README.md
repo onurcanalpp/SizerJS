@@ -26,7 +26,7 @@ OR
 ```bash 
 yarn add sizerjs
 ```
-test
+
 ## Usage 
 
 ### Basic Setup
