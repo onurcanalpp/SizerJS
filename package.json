@@ -1,6 +1,6 @@
 {
   "name": "sizerjs",
-  "version": "1.0.8",
+  "version": "1.0.8-alpha",
   "description": "A library for auto-sizing elements in your web projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
