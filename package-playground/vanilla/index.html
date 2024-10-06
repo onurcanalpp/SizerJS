@@ -4,197 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SizerJS Playground</title>
 
-    
+    <script type="module">
+        import { initAutoSizer, destroyAutoSizer } from 'https://onurcanalp.com.tr/jslibraries/sizer-js/sizer.min.js';
 
-<script type="module" src="../dist/index.js"></script>
+        /* 
+            initAutoSizer() function is used to initialize the autoSizer. 
+            destroyAutoSizer() function is used to destroy the autoSizer.
+        */
+
+        /*
+        window.onload = function() {
+            initAutoSizer();
+        }
+        */
+        const switchButton = document.getElementById('switch');
+        switchButton.addEventListener('click', function() {
+            initAutoSizer();
+        });
+    </script>
 </head>
 <body>
-
+    <div class="page-title">
+        <h1>AutoSizer</h1>
+        <label class="switch" id="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
     <div class="product-list" autoSizerActive="test1">
         
         <div class="product-item">
             <div class="product-image">
-                <img src="https://via.placeholder.com/150" alt="product-image">
+                <img src="https://picsum.photos/seed/picsum/600/250" alt="product-image">
             </div>
             <div class="product-item-content">
                 <div class="product-name">
-                    <h3>Product Name</h3>
+                    <h3>Stylish Product Name  Stylish Product Name Stylish Product Name</h3>
                 </div>
                 <div class="product-price">
-                    <p>Price: $100</p>
+                    <p>Price Long Text Example for the library: <span>$100,392,123</span></p>
                 </div>
                 <div class="product-action">
                     <button>Add to Cart</button>
                 </div>
             </div>
         </div>
-
-        
         <div class="product-item">
             <div class="product-image">
-                <img src="https://via.placeholder.com/150x75" alt="product-image">
+                <img src="https://picsum.photos/id/237/400/200" alt="product-image">
             </div>
             <div class="product-item-content">
                 <div class="product-name">
-                    <h3>Product Name</h3>
+                    <h3>Stylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product Name</h3>
                 </div>
                 <div class="product-price">
-                    <p>Price: $100</p>
+                    <p>Price: <span>$100</span></p>
                 </div>
                 <div class="product-action">
                     <button>Add to Cart</button>
                 </div>
             </div>
         </div>
-
-        
         <div class="product-item">
             <div class="product-image">
-                <img src="https://via.placeholder.com/150x100" alt="product-image">
+                <img src="https://picsum.photos/600/200" alt="product-image">
             </div>
             <div class="product-item-content">
                 <div class="product-name">
-                    <h3>Product Name Product Name Product Name Product Name </h3>
+                    <h3>Stylish Product Name Test Name</h3>
                 </div>
                 <div class="product-price">
-                    <p>Price: $100</p>
+                    <p>Price: <span>$100</span></p>
                 </div>
                 <div class="product-action">
                     <button>Add to Cart</button>
                 </div>
             </div>
         </div>
-
-        
         <div class="product-item">
             <div class="product-image">
-                <img src="https://via.placeholder.com/150x125" alt="product-image">
+                <img src="https://picsum.photos/600/100" alt="product-image">
             </div>
             <div class="product-item-content">
                 <div class="product-name">
-                    <h3>Product Name dsakdsaşlgdsajgsadk akfj ksalfd lksajfsalk fkjlsa</h3>
+                    <h3>Stylish Product Name</h3>
                 </div>
                 <div class="product-price">
-                    <p>Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 </p>
+                    <p>Price: <span>$100</span></p>
+                </div>
+                <div class="product-action">
+                    <button>Add to Cart Add to Cart Add to Cart Add to Cart Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-item">
+            <div class="product-image">
+                <img src="https://picsum.photos/600/400" alt="product-image">
+            </div>
+            <div class="product-item-content">
+                <div class="product-name">
+                    <h3>Stylish Product Name</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: <span>$100</span></p>
                 </div>
                 <div class="product-action">
                     <button>Add to Cart</button>
                 </div>
             </div>
         </div>
-
-        
         <div class="product-item">
             <div class="product-image">
-                <img src="https://via.placeholder.com/150" alt="product-image">
+                <img src="https://picsum.photos/seed/picsum/600/300" alt="product-image">
             </div>
             <div class="product-item-content">
                 <div class="product-name">
-                    <h3>Product Name</h3>
+                    <h3>Stylish Product Name</h3>
                 </div>
                 <div class="product-price">
-                    <p>Price: $100</p>
+                    <p>Price: <span>$100</span></p>
                 </div>
                 <div class="product-action">
-                    <button>Add to Cartto Cartto Cartto Cartto Cartto Cartto Cartto Cartto Cart</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-image">
+                <img src="https://picsum.photos/id/237/400/300" alt="product-image">
+            </div>
+            <div class="product-item-content">
+                <div class="product-name">
+                    <h3>Stylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product NameStylish Product Name</h3>
+                </div>
+                <div class="product-price">
+                    <p>PricePrice Price Price Long Text: <span>$100,202</span></p>
+                </div>
+                <div class="product-action">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-image">
+                <img src="https://picsum.photos/600/200" alt="product-image">
+            </div>
+            <div class="product-item-content">
+                <div class="product-name">
+                    <h3>Stylish Product Name</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: <span>$100</span></p>
+                </div>
+                <div class="product-action">
+                    <button>Add to Cart</button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="product-list" autoSizerActive="test2">
-        
-        <div class="product-item">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/150" alt="product-image">
-            </div>
-            <div class="product-item-content">
-                <div class="product-name">
-                    <h3>Product Name</h3>
-                </div>
-                <div class="product-price">
-                    <p>Price: $100</p>
-                </div>
-                <div class="product-action">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="product-item">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/150x75" alt="product-image">
-            </div>
-            <div class="product-item-content">
-                <div class="product-name">
-                    <h3>Product Name</h3>
-                </div>
-                <div class="product-price">
-                    <p>Price: $100</p>
-                </div>
-                <div class="product-action">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="product-item">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/150x100" alt="product-image">
-            </div>
-            <div class="product-item-content">
-                <div class="product-name">
-                    <h3>Product Name Product Name Product Name Product Name </h3>
-                </div>
-                <div class="product-price">
-                    <p>Price: $100</p>
-                </div>
-                <div class="product-action">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="product-item">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/150x125" alt="product-image">
-            </div>
-            <div class="product-item-content">
-                <div class="product-name">
-                    <h3>Product Name dsakdsaşlgdsajgsadk akfj ksalfd lksajfsalk fkjlsa</h3>
-                    <h2>asd</h2>
-                </div>
-                <div class="product-price">
-                    <p>Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 Price: $100 </p>
-                </div>
-                <div class="product-action">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="product-item">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/150" alt="product-image">
-            </div>
-            <div class="product-item-content">
-                <div class="product-name">
-                    <h3>Product Name</h3>
-                </div>
-                <div class="product-price">
-                    <p>Price: $100</p>
-                </div>
-                <div class="product-action">
-                    <button>Add to Cartto Cartto Cartto Cartto Cartto Cartto Cartto Cartto Cart</button>
-                </div>
-            </div>
-        </div>
     </div>
     
 </body>
