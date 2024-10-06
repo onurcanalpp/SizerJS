@@ -9,11 +9,10 @@ SizerJS is a lightweight library for dynamically adjusting the heights of elemen
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Reference](#api-reference)
+- [API Documentation](#api-reference)
 - [Examples](#examples)
 - [License](#license)
 - [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
 
 ## Installation
 
@@ -80,3 +79,47 @@ Cleans up and removes the event listener for resize events.
 ```javascript
 destroyAutoSizer(); // Stops the auto-sizing functionality
 ```
+
+## Contributing
+
+We welcome contributions to SizerJS! To ensure a smooth process, please follow these guidelines:
+
+### How to Contribute
+
+1. **Fork the Repository**
+   - Click on the "Fork" button at the top right of the repository page to create a copy of this repository under your GitHub account.
+
+2. **Clone Your Fork**
+   - Clone your forked repository to your local machine using the following command:
+   ```bash
+   git clone https://github.com/your-username/sizerjs.git
+   ```
+
+3. **Create a New Branch**
+    - Clone your forked repository to your local machine using the following command:
+    ```bash
+    git checkout -b feature/YourFeatureName
+    ```
+
+4. **Make Your Changes**
+    - Implement your changes and ensure that they align with the project's coding style. Consider adding tests if applicable.
+    
+5. **Test Your Changes**
+    - Run the existing tests to make sure everything is working as expected. If you've added new features, please include tests for them.
+
+6. **Create a New Branch**
+    - Commit your changes with a descriptive message:
+
+    ```bash
+    git commit -m "Add a brief description of your changes"
+    ``` 
+7. **Push to Your Branch**
+    - Push your changes to your forked repository:
+
+    ```bash
+    git push origin feature/YourFeatureName
+    ``` 
+8. **Create a Pull Request**
+    - Navigate to the original repository where you want to propose your changes. Click on the "Pull Requests" tab, then click on "New Pull Request."
+    - Select your branch from the "compare" dropdown and click "Create Pull Request."
+    - Provide a detailed description of your changes and why they should be merged.
