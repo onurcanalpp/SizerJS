@@ -69,3 +69,16 @@ export function mergeRelatedElements(relatedElements) {
     }, []);
     return result;
 }
+/**
+ * Resets the minHeight and height styles of the given elements to 'auto'.
+ *
+ * @param {HTMLElement[]} elements - An array of DOM elements whose heights will be reset.
+ */
+export function resetElementHeights(elements) {
+    if (elements.length === 0)
+        return;
+    elements.forEach((element) => {
+        element.style.minHeight = 'auto';
+        element.style.height = 'auto';
+    });
+}

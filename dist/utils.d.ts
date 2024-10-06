@@ -30,3 +30,9 @@ export declare function groupChildrenByRow(sizerChildItems: Array<any>, containe
  * @returns An array of merged elements.
  */
 export declare function mergeRelatedElements(relatedElements: any): any;
+/**
+ * Resets the minHeight and height styles of the given elements to 'auto'.
+ *
+ * @param {HTMLElement[]} elements - An array of DOM elements whose heights will be reset.
+ */
+export declare function resetElementHeights(elements: any[]): void;

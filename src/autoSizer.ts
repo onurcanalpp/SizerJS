@@ -1,4 +1,4 @@
-import { debounce, getBiggerHeight, hasNestedArray, groupChildrenByRow, mergeRelatedElements } from './utils';
+import { debounce, getBiggerHeight, hasNestedArray, groupChildrenByRow, mergeRelatedElements, resetElementHeights } from './utils';
 import { getAutoSizeElements } from './domUtils';
 
 let resizeHandler: (() => void) | null = null;
@@ -40,10 +40,9 @@ function controlElementGroupStructure(group: Array<any>) {
         group.forEach((innerGroup: HTMLElement[]) => {
             innerGroup.forEach((innerElement: HTMLElement) => {
                 let layerOfElementChildren = Array.from(innerElement.children);
-                layerOfElementChildren.forEach((childElement: any) => {
-                    childElement.style.minHeight = 'auto';
-                });
+                resetElementHeights(layerOfElementChildren);
             });
+            resetElementHeights(innerGroup);
             let rowHeights = innerGroup.map((element) => element.offsetHeight);
             let biggerRowHeight = getBiggerHeight(rowHeights);
 
