@@ -1,0 +1,15 @@
+# Ignore node_modules and other non-essential files
+node_modules/
+dist/
+package-playground/
+*.d.ts
+*.map
+*.scss
+*.css
+
+# Ignore the following files
+.gitignore
+CHANGELOG.md
+README.md
+tsconfig.json
+package-lock.json
